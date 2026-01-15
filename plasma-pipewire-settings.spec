@@ -20,9 +20,9 @@ Requires:       plasma-desktop
 An easy-to-use widget to change Pipewire's quantum and sample rate from
 the KDE Plasma 6 Desktop Environment.
 
+
 %prep
-%autosetup -C
-%patch 0 -p1
+%autosetup -C -p1
 
 %build
 # No build required
