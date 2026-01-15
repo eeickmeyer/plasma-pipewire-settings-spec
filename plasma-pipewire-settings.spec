@@ -1,5 +1,5 @@
 %global commit 601eb68e778f4507cec98c951b8f6cec3633efd5
-%global commitshort 601eb68
+%global commitshort %{sub %{commit} 1 7}
 %global commitdate 20251231
 
 Name:           plasma-pipewire-settings
