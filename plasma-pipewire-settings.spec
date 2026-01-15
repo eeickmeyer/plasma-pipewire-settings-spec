@@ -29,9 +29,6 @@ the KDE Plasma 6 Desktop Environment.
 mkdir -p %{buildroot}%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings
 cp -r package/* %{buildroot}%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings/
 
-%check
-# No tests available for this package
-
 %files
 %license LICENSE
 %doc README.md
