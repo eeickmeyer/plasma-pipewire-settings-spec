@@ -3,7 +3,7 @@
 %global commitdate 20251231
 
 Name:           plasma-pipewire-settings
-Version:        1.2-git%{commitdate}.%{shortcommit}
+Version:        1.2~git%{commitdate}.%{shortcommit}
 Release:        1%{?dist}
 Summary:        Simple Plasma 6 widget to change Pipewire quantum and sample rate
 
