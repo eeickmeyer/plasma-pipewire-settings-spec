@@ -7,7 +7,7 @@ Version:        1.2~git%{commitdate}.%{shortcommit}
 Release:        1%{?dist}
 Summary:        Simple Plasma 6 widget to change Pipewire quantum and sample rate
 
-License:        GPL-3.0-only
+License:        GPL-3.0-or-later
 URL:            https://github.com/magillos/Pipewire-Settings-Widget-for-Plasma-6
 Source0:        %{url}/archive/%{commit}/%{name}-%{commit}.tar.gz
 
