@@ -1,3 +1,5 @@
+%global commit 601eb68e778f4507cec98c951b8f6cec3633efd5
+
 Name:           plasma-pipewire-settings
 Version:        1.2
 Release:        1%{?dist}
@@ -5,7 +7,7 @@ Summary:        Simple Plasma 6 widget to change Pipewire quantum and sample rat
 
 License:        GPL-3.0-only
 URL:            https://github.com/magillos/Pipewire-Settings-Widget-for-Plasma-6
-Source0:        %{url}/archive/refs/heads/main.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        %{url}/archive/%{commit}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 
@@ -16,7 +18,7 @@ An easy-to-use widget to change Pipewire's quantum and sample rate from
 the KDE Plasma 6 Desktop Environment.
 
 %prep
-%autosetup -n Pipewire-Settings-Widget-for-Plasma-6-main
+%autosetup -C
 
 %build
 # No build required
@@ -24,6 +26,9 @@ the KDE Plasma 6 Desktop Environment.
 %install
 mkdir -p %{buildroot}%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings
 cp -r package/* %{buildroot}%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings/
+
+%check
+# No tests available for this package
 
 %files
 %license LICENSE
