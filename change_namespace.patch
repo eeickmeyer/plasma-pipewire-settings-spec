@@ -9,7 +9,6 @@ The kde namespace cannot be used for third-party plasmoids like this.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/package/metadata.json b/package/metadata.json
-index f94f620..13a279c 100644
 --- a/package/metadata.json
 +++ b/package/metadata.json
 @@ -10,7 +10,7 @@
@@ -18,6 +17,6 @@ index f94f620..13a279c 100644
          "Icon": "audio",
 -        "Id": "org.kde.plasma.pipewiresettings",
 +        "Id": "com.github.magillos.pipewiresettings",
-         "License": "GPL-3.0-or-later",
+         "License": "GPL-3.0",
          "Name": "Pipewire Settings",
          "ServiceTypes": [
