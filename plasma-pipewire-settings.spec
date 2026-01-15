@@ -10,6 +10,7 @@ Summary:        Simple Plasma 6 widget to change Pipewire quantum and sample rat
 License:        GPL-3.0-or-later
 URL:            https://github.com/magillos/Pipewire-Settings-Widget-for-Plasma-6
 Source0:        %{url}/archive/%{commit}/%{name}-%{commit}.tar.gz
+Patch0:         change_namespace.patch
 
 BuildArch:      noarch
 
@@ -21,18 +22,19 @@ the KDE Plasma 6 Desktop Environment.
 
 %prep
 %autosetup -C
+%patch 0 -p1
 
 %build
 # No build required
 
 %install
-mkdir -p %{buildroot}%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings
-cp -r package/* %{buildroot}%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings/
+mkdir -p %{buildroot}%{_datadir}/plasma/plasmoids/com.github.magillos.pipewiresettings
+cp -r package/* %{buildroot}%{_datadir}/plasma/plasmoids/com.github.magillos.pipewiresettings/
 
 %files
 %license LICENSE
 %doc README.md
-%{_datadir}/plasma/plasmoids/org.kde.plasma.pipewiresettings/
+%{_datadir}/plasma/plasmoids/com.github.magillos.pipewiresettings/
 
 %changelog
 * Thu Jan 15 2026 Erich Eickmeyer <erich@ericheickmeyer.com> - 1.2-1
