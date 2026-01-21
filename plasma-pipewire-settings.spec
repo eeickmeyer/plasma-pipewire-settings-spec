@@ -32,5 +32,5 @@ cp -r package/* %{buildroot}%{_datadir}/plasma/plasmoids/com.github.magillos.pip
 %{_datadir}/plasma/plasmoids/com.github.magillos.pipewiresettings/
 
 %changelog
-* Thu Jan 15 2026 Erich Eickmeyer <erich@ericheickmeyer.com> - 1.2-1
+* Thu Jan 15 2026 Erich Eickmeyer <erich@ericheickmeyer.com> - 1.2.1-1
 - Initial RPM package
