@@ -34,4 +34,5 @@ cp -r package/* %{buildroot}%{_datadir}/plasma/plasmoids/com.github.magillos.pip
 %doc README.md
 %{_datadir}/plasma/plasmoids/com.github.magillos.pipewiresettings/
 
+%changelog
 %autochangelog
